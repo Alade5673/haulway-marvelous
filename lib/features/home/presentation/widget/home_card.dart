@@ -21,7 +21,7 @@ class HomeCard extends StatelessWidget {
           children: [
             Container(
               width: constraint.maxWidth,
-              height: constraint.maxHeight * 0.7,
+              height: constraint.maxHeight * 0.68,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12.r),
                 image: const DecorationImage(
@@ -41,7 +41,7 @@ class HomeCard extends StatelessWidget {
               style: context.textBodyTheme?.copyWith(
                 color: AppColors.kSecondary,
                 fontWeight: FontWeight.w400,
-                fontSize: 12.sp,
+                fontSize: constraint.maxWidth * 0.09,
               ),
             ).padOnly(left: 8, right: 4),
             Gap(4.h),
@@ -54,8 +54,9 @@ class HomeCard extends StatelessWidget {
                 Gap(4.w),
                 Text(
                   'Rose Francis',
-                  style: context.textBodyTheme
-                      ?.copyWith(color: AppColors.kSecondary, fontSize: 14.sp),
+                  style: context.textBodyTheme?.copyWith(
+                      color: AppColors.kSecondary,
+                      fontSize: constraint.maxWidth * 0.1),
                 )
               ],
             ).padOnly(left: 8, right: 4),

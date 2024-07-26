@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ).padOnly(left: 4, top: 14),
             SizedBox(
               width: 1.sw,
-              height: 0.15.sh,
+              height: 0.17.sh,
               child: ListView.builder(
                 itemCount: 10,
                 scrollDirection: Axis.horizontal,
@@ -66,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             SizedBox(
               width: 1.sw,
-              height: 8.sh,
+              // height: 8.sh,
               child: GridView.builder(
                 itemCount: 20,
                 physics: const NeverScrollableScrollPhysics(),
