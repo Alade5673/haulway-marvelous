@@ -89,11 +89,11 @@ class _HomeScreenState extends State<HomeScreen> {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           FloatingActionButton(
-            backgroundColor: Color(0xffFF0000),
+            backgroundColor: const Color(0xffFF0000),
             onPressed: () {},
             child: SvgPicture.asset(SvgAssets.broadcast),
           ),
-          Gap(8.h),
+          Gap(20.h),
           FloatingActionButton(
             onPressed: () {},
             child: Icon(
